@@ -115,7 +115,7 @@ ul
 }
 
 /* Header position */
-.header .container{
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,6 +125,7 @@ ul
   border-color: var(--main-text-color-gray); */
 }
 
+/* Линия хедера */
 .header {
   border-bottom: 1px solid var(--bg-header-line);
 /* или */
@@ -134,17 +135,17 @@ border-color: var(--main-text-color-gray); */
 }
 
 /* Центровка контактов */
-.up-menue-style,
-.nav-contacts .list {
+.site-nav{
 display: flex;
 align-items: center;
 
 }
 
 
-.site-nav,
-.nav-contacts
+.site-nav__list,
+.header-contacts
  {
+  list-style: none;
   display: inline-flex;
   padding-left: 0;
 }
@@ -155,26 +156,31 @@ align-items: center;
 }
 
 /* отступ для студии,портфолио и контактов */
-.up-menue-style .site-nav {
+.site-nav .site-nav__list {
   /* margin-right: 331px; */
   margin-left: 93px;
 }
 
 /* отступы внутри site-nav */
-.site-nav .li-header,
-.up-phone-email-style .li-header {
+.site-nav__item,
+.header-contacts__item {
   margin-right: 50px;
 }
 
+
+.site-nav__link {
+  position: relative;
+}
+
 /* расположение текста относительно картинок */
-.nav-contacts li .icon,
-.nav-contacts li .link
+.header-contacts__link,
+.header-contacts__icon
  {
   vertical-align: middle;
 }
 
 /* пвсстояние между картинкой и текстом */
-.header-icon-link {
+.header-contacts__icon {
   fill: var(--main-text-color-gray);
   margin-right: 10px;
   /* padding: 10px; */
@@ -186,36 +192,46 @@ align-items: center;
 }
 
 
-.container .up-phone-email-style {
+/* .container .up-phone-email-style {
   fill: var(--main-text-color-gray);
   margin-left: auto;
-}
-
-
-/* Настройка расположения и размеров заголовка */
-.container .h1-style {
-  /* position: absolute; */
-width: 696px;
-/* height: 120px; */
-margin: 0 auto;
-text-align: center;
-margin-bottom: 30px;
-}
-
-/* Настройка положения и размера кнопки */
-.container .button {
-  padding-right: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  /* border-color: var(--main-text-color-blue); */
-  margin: 0 auto;
-}
-
-/* .main-bg .bg-color-up .container{
-  padding-top: 200px;
-  padding-bottom: 200px;
 } */
+
+/* Стиль заголовка н1; Настройка расположения и размеров заголовка */
+.hero__title {
+  color: var(--main-text-color-white);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  /* margin-top: 0;
+  margin-bottom: 30px; */
+  width: 696px;
+  margin: 0 auto 30px auto;
+  /* text-align: center; */
+  /* position: absolute; */
+  /* width: 696px; */
+  /* height: 120px; */
+  /* text-align: center; */
+  }
+
+  /* Настройка положения, цвета и размера кнопки  */
+  .button-index {
+    background-color: var(--main-text-color-blue);
+    border: none;
+    border-radius: 4px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    margin: 0 auto;
+  }
+
+
+
+
+
 
 /* Положение Наших особенностей */
 .container .index-list { 
@@ -432,9 +448,8 @@ width: 370px;
 
 
 /* Увеличение области кликабельности ссылки */
-/* .up-menue-style .logo-link, */
-.site-nav .link,
-.nav-contacts li .link {
+.site-nav__link,
+.header-contacts__link {
   padding: 30px 0;
 }
 
@@ -516,7 +531,7 @@ width: 370px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-delay: 0; */
 }
-.li-header .linc .icon {
+.header-contacts__icon {
     /* Функция смены цвета */
     transition-property: background-color, fill;
     transition-duration: 250ms;
@@ -915,8 +930,8 @@ body {
 
 
 /* Выделение цветом иконок письма и телефона. Ховер и фокус задается всегда на ссылку! */
-.link:hover .header-icon-link,
-.link:focus .header-icon-link {
+.link:hover .header-contacts__icon,
+.link:focus .header-contacts__icon {
   fill: var(--main-text-color-blue);
 
 
@@ -953,16 +968,18 @@ body {
 
 
     /* Стили телефона и имэйла в хедере */
-.up-phone-email-style {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--main-text-color-gray);
+.header-contacts {
+  fill: var(--main-text-color-gray);
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color-gray);
 }
 
 /* оформление верхнего меню */
-.up-menue-style {
+.site-nav {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -990,16 +1007,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
     }
 
-/* Стиль заголовка н1 */
-.h1-style {
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-/* text-align: center; */
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--main-text-color-white);
-}
+
 
 /* Стиль заголовка н2 */
 .h2-style {
@@ -1155,12 +1163,6 @@ margin-top: 0;
   /* color: var(--main-text-color-master-black); */
   }
 
-.button-index {
-  background-color: var(--main-text-color-blue);
-  border: none;
-  border-radius: 4px;
-}
-
 /* изменение цвета кнопки при наведении */
 .button:hover,
 .button:focus {
@@ -1210,16 +1212,7 @@ cursor: pointer;
   border-color: var(--main-text-color-white);
 }
 
-/* .bg-color-header { */
-  /* position: absolute; */
-  /* width: 1600px; */
-  /* height: 80px; */
-  /* left: 0px; */
-  /* top: 0px; */
-  /* background: var(--main-text-color-white); */
-/* } */
-
-.bg-color-up {
+.hero__section {
 
 background-color: var(--bg-color-gray);
 text-align: center;
@@ -1235,7 +1228,7 @@ background-position: center;
 background-repeat: no-repeat;
 object-fit: cover;  /*задаем отображение картинки-фона (стоять на месте и т.д.);/
 /* центр всегда на месте */
-background-position: center;
+/* background-position: center; */
 /* можно задать ысоту банера, убирая паддинги, но тогда могут возникнуть баги с переполнением */
 
   /* display: flex;*/  /*работает вместе с align-items*/
@@ -1309,9 +1302,7 @@ box-sizing: border-box;
   color: var(--main-text-color-blue);
   position: relative; 
 }
-.header-link {
-  position: relative;
-}
+
 
 /* Нижняя линия на активном элементе меню */
 .current::after {
@@ -1495,7 +1486,7 @@ box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
   /* height: 581px; */
@@ -1505,7 +1496,7 @@ box-sizing: border-box;
 }
 
 /* Размер и позиция кнопки Х */
-.modal-bottom {
+.modal__bottom-close {
   background-color: var(--main-text-color-white);
   display: flex;
   margin-left: auto;
@@ -1522,17 +1513,10 @@ box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Параметры самого Х */
-.modal-bottom .icon{
-  position: absolute;
-  width: 18px;
-  height: 18px;
-}
-
-.modal-bottom:hover,
-.modal-bottom:focus,
-.modal-bottom:hover .icon,
-.modal-bottom:focus .icon{
+.modal__bottom-close:hover,
+.modal__bottom-close:focus,
+.modal__bottom-close:hover .icon,
+.modal__bottom-close:focus .icon{
   cursor: pointer;
 }
 
@@ -1540,7 +1524,8 @@ box-sizing: border-box;
 
 /* Модальная форма */
 
-.form {
+.modal-form {
+  /* width: 100%; */
   width: 528px;
   margin-left: auto;
   margin-right: auto;
@@ -1548,7 +1533,7 @@ box-sizing: border-box;
   padding-top: 2px;
 }
 
-.form h3 {
+.modal-form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1567,7 +1552,7 @@ box-sizing: border-box;
 
 .form-field label {
   margin-bottom: 4px;
-
+align-items: flex-start;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1699,8 +1684,8 @@ box-sizing: border-box;
   color: var(--main-text-color-blue);
 }
 
-.form .button-send:hover,
-.form .button-send:focus {
+.modal-form .button-send:hover,
+.modal-form .button-send:focus {
   background-color: #188ce8;
 }
 
