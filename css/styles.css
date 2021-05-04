@@ -115,19 +115,19 @@ ul
 }
 
 /* Header position */
-.header__content {
+.header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 25px; */
   /* border-bottom: 30;
   border-color: var(--main-text-color-gray); */
 }
 
-/* Линия хедера */
 .header {
   border-bottom: 1px solid var(--bg-header-line);
+  background: var(--main-text-color-white);
 /* или */
 /* border-width: 1px;
 border-style: solid;
@@ -135,52 +135,49 @@ border-color: var(--main-text-color-gray); */
 }
 
 /* Центровка контактов */
-.site-nav{
+/* ,
+.header-contacts .list  */
+.header-style{
 display: flex;
 align-items: center;
 
 }
 
 
-.site-nav__list,
-.header-contacts
+/* .nav-contacts */
+.header-menue
  {
-  list-style: none;
   display: inline-flex;
   padding-left: 0;
 }
 
 /* отступ для логотипа */
-.container .logo {
+.logo {
   margin-right: auto;
 }
 
 /* отступ для студии,портфолио и контактов */
-.site-nav .site-nav__list {
+.header-menue {
   /* margin-right: 331px; */
-  margin-left: 93px;
+  margin-left: 80px;
 }
 
-/* отступы внутри site-nav */
-.site-nav__item,
-.header-contacts__item {
+/* отступы внутри header-menue */
+.header-menue__li,
+.header-contacts__li {
   margin-right: 50px;
 }
 
-
-.site-nav__link {
-  position: relative;
-}
-
 /* расположение текста относительно картинок */
-.header-contacts__link,
-.header-contacts__icon
+.header-contacts__icon-link,
+.header-contacts__link
  {
   vertical-align: middle;
+  /* padding: 30px 0; */
 }
 
 /* пвсстояние между картинкой и текстом */
-.header-contacts__icon {
+.header-contacts__icon-link {
   fill: var(--main-text-color-gray);
   margin-right: 10px;
   /* padding: 10px; */
@@ -192,49 +189,28 @@ align-items: center;
 }
 
 
-/* .container .up-phone-email-style {
+/* .container .header-contacts {
   fill: var(--main-text-color-gray);
   margin-left: auto;
 } */
 
-/* Стиль заголовка н1; Настройка расположения и размеров заголовка */
-.hero__title {
-  color: var(--main-text-color-white);
-  letter-spacing: 0.06em;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  /* margin-top: 0;
-  margin-bottom: 30px; */
-  width: 696px;
-  margin: 0 auto 30px auto;
-  /* text-align: center; */
-  /* position: absolute; */
-  /* width: 696px; */
-  /* height: 120px; */
-  /* text-align: center; */
-  }
+/* Настройка положения и размера кнопки */
+/* .container .button { */
+  /* padding-right: 32px; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* padding-left: 32px; */
+  /* border-color: var(--main-text-color-blue); */
+  /* margin: 0 auto; */
+/* } */
 
-  /* Настройка положения, цвета и размера кнопки  */
-  .button-index {
-    background-color: var(--main-text-color-blue);
-    border: none;
-    border-radius: 4px;
-    padding-right: 32px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    margin: 0 auto;
-  }
-
-
-
-
-
+/* .main-bg .hero .container{
+  padding-top: 200px;
+  padding-bottom: 200px;
+} */
 
 /* Положение Наших особенностей */
-.container .index-list { 
+.feature { 
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -245,36 +221,55 @@ align-items: center;
   border-color: var(--main-text-color-gray); */
 }
 
-/* Размер класа our-list и расстояния между ними */
-.our-list {
+/* Размер класа feature__list-item и расстояния между ними */
+.feature__list-item {
   width: 270px;
   /* height: 101px; */
   
 }
 
-.index-list .our-margin{
+.feature__list-margin{
   margin-right: 30px;
   /* padding-left: 0; */
 }
 
+
+
 /* промежуток между заголовком и подписью */
-.our-list .h3-style{
+.feature__h3{
   margin-bottom: 10px;
   margin-top: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color-black);
 }
 
-.container .h2-style-what-we-do {
+.section-soft_h2 {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 0;
+
+  /* настройка текста */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master-black);
 }
 
-.what-are-we-do.section{
+.section-soft{
   padding-top: 0;
 }
 
 /* Положение Наших особенностей */
-.list-work { 
+.soft { 
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -285,18 +280,18 @@ align-items: center;
 }
 
 /* Расстояние между блоками */
-.list-work .li{
+.soft__li{
   margin-right: 30px;
 }
 
-/*.list-work .relative .list-what-img{
+/*.soft .soft__relative .list-what-img{
   position: relative;
   width: 370px;
   height: 294px;
   left: 0px;
   top: 0px;
 } */
-.list-work .relative{
+.soft__relative{
   position: relative;
   /* width: 370px;
   height: 294px; */
@@ -304,7 +299,7 @@ align-items: center;
   top: 0px;
 }
 
-.list-work .relative .what-p{
+.soft__p{
 position: absolute;
 bottom: 0;
 font-weight: 700;
@@ -321,18 +316,18 @@ width: 370px;
 } 
 
 /* превращаем картинку в блок */
-.list-work li img{
+.soft li img{
   display: block;
 }
 
 /* Наша команда тени */
-.container .list-team .our-shadow {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+/* .team-list .our-shadow { */
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
   /* border-radius: 0px 0px 4px 4px; */
-}
+/* } */
 
 /* Положение Наших особенностей */
-.list-team { 
+.team-list { 
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -342,31 +337,31 @@ width: 370px;
   border-color: var(--main-text-color-gray); */
 }
 
-.list-team .block-style-index-margin {
+.team-list__margin {
   margin-right: 30px;
 }
 
-.block-style-index div .h2-style-team,
-.block-style-index div .p-style {
+.team-list__h3,
+.team-list__p {
   text-align: center;
 }
 
-.block-style-index div .h2-style-team {
+.team-list__h3 {
   margin-bottom: 10px;
   margin-top: 0;
 }
 
-.block-style-index div .p-style {
+.team-list__p {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0px;
 }
 
-.block-style-index div {
+.team-list__index div {
   padding: 30px;
 }
 
-.block-style-index img {
+.team-list__index img {
   display: block;
   margin-bottom: 0px;
 }
@@ -383,14 +378,14 @@ width: 370px;
   border-color: var(--main-text-color-gray); */
 }
 
-.container .footer-address .logo-margin {
+.logo-margin {
   display:block;
   margin-bottom: 20px;
 }
 
 /* Страница Портфолио */
-/* main */
-.main-bg-portfolio .section .container .port-menu{
+/* main .main-bg-portfolio  .section .container */
+ .port-menu{
   display: flex;
   justify-content:center;
   align-items: center;
@@ -410,16 +405,18 @@ width: 370px;
 }
 
 /* Отступ между кнопками port-menu */
-.port-menu-button-margin {
+.port-menu__button-margin {
   margin-right: 8px;
 }
 
 /* display: block for img port-menu */
-.list-item-portfolio img {
+.portfolio__img {
   display: block;
+  max-width: 100%;
 }
 
-.main-bg-portfolio .section .container .list-margin {
+/* .main-bg-portfolio  .section*/
+ .portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
@@ -430,13 +427,13 @@ width: 370px;
   padding-left: 0;
 }
 
-.list-text-portfolio {
+.portfolio__list-text {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
 }
 
-.list-item-portfolio {
+.portfolio__list-item {
   margin: 0 30px 30px 0px;
   /* width: 370px; */
 
@@ -448,29 +445,41 @@ width: 370px;
 
 
 /* Увеличение области кликабельности ссылки */
-.site-nav__link,
-.header-contacts__link {
-  padding: 30px 0;
-}
+/* .header-style .logo-link, */
+/* .header-menue .link, */
+/* .header-contacts li .link { */
+  /* padding: 30px 0; */
+/* } */
 
 
 
 
 /* Отступ для Нашей команды */
-.container .our-team-margin{
+.team__margin{
   margin-top: 0;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+/* стиль текста */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master-black);
 }
 
-.our-shadow div .p-style {
+.team-list__p {
   margin-bottom: 16px;
 }
 
 /* Настройка заднего фона для иконок соцсетей в Нашей команде */
-.social-icons-item .social-icons-link {
+/* .team-social-icons__link */
+.team-social-icons__link {
   background-color: var(--main-text-color-white);
   display: flex;
   justify-content: center;
@@ -480,13 +489,9 @@ width: 370px;
   border-radius: 50%;
 }
 
-/* Расстояние между иконками */
-.social-icons-item-margin {
-  margin-right: 10px;
-}
 
 /* Параметры иконок соцсетей */
-.social-icons .icon{
+.team-social-icons__icon{
   width: 20px;
   height: 20px;
   fill: var(--icon-color-gray);
@@ -495,7 +500,7 @@ width: 370px;
 }
 
 /* отступ от левого края для всех иконок */
-.list-team div .social-icons {
+.team-social-icons {
   display: inline-flex;
   /* margin: 0 auto; */
   padding: 0 0 0 2px;
@@ -503,10 +508,13 @@ width: 370px;
 }
 
 /* Выделение цветом иконок соцсетей нашей команды. Ховер и фокус задается всегда на ссылку! */
-/* .social-icons-item .social-icons-link:hover .icon,
-.social-icons-item .social-icons-link:focus .icon, */
-.social-icons-item .social-icons-link:hover,
-.social-icons-item .social-icons-link:focus {
+/* .footer-soc__item .footer-soc__link:hover .icon,
+.footer-soc__item .footer-soc__link:focus .icon, */
+
+/* .footer-soc__item .footer-soc__link:hover,
+.footer-soc__item .footer-soc__link:focus */
+.team-social-icons__link:hover,
+.team-social-icons__link:focus {
   fill: var(--main-text-color-white);
   background-color: var(--main-text-color-blue);
   
@@ -517,7 +525,7 @@ width: 370px;
 }
 
 /* Настройка заднего фона для иконок соцсетей в футере */
-.container .list .social-icons-item .social-icons-link {
+.footer-soc__link {
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
@@ -531,7 +539,7 @@ width: 370px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-delay: 0; */
 }
-.header-contacts__icon {
+.header-contacts__icon-link {
     /* Функция смены цвета */
     transition-property: background-color, fill;
     transition-duration: 250ms;
@@ -539,8 +547,16 @@ width: 370px;
     /* transition-delay: 0; */
 }
 
-/* Расстояние между иконками */
-.social-icons-item-margin {
+/* Расстояние между иконками footer */
+.footer-soc__item-margin {
+  margin-right: 10px;
+  margin-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Расстояние между иконками team */
+.team-social-icons__margin {
   margin-right: 10px;
   margin-top: 0;
   margin-top: 0;
@@ -548,7 +564,7 @@ width: 370px;
 }
 
 /* Параметры иконок соцсетей Нашей команды */
-.block-style-index div .social-icons .social-icons-link .icon{
+.team-social-icons__icon{
   width: 20px;
   height: 20px;
   fill: var(--icon-color-gray);
@@ -562,7 +578,7 @@ width: 370px;
 }
 
 /* Параметры иконок соцсетей Футера*/
-.container .list .social-icons-link .icon{
+.footer-soc__icon{
   width: 20px;
   height: 20px;
   fill: var(--main-text-color-white);
@@ -577,7 +593,9 @@ width: 370px;
   /* transition-delay: 0; */
 }
 
-.container .list .social-icons-item .social-icons-link {
+/* Footer */
+/* .container .social-icons .footer-soc__item .footer-soc__link */
+.team-social-icons__link {
 
   /* Функция смены цвета */
   transition-property: background-color;
@@ -586,18 +604,18 @@ width: 370px;
   /* transition-delay: 0; */
 }
 
-/* отступ от левого края для всех иконок и все в ряд */
-.container .social-icons {
+/* отступ от левого края для всех иконок в Footer и все в ряд */
+.footer-soc__list {
   display: inline-flex;
   /* margin: 0 auto; */
   padding: 0;
 }
 
 /* Выделение цветом иконок соцсетей футера. Ховер и фокус задается всегда на ссылку! */
-/* .container .list .social-icons-item .social-icons-link:hover .icon,
-.container .list .social-icons-item .social-icons-link:focus .icon, */
-.container .list .social-icons-item .social-icons-link:hover,
-.container .list .social-icons-item .social-icons-link:focus {
+/* .footer-soc__list .footer-soc__item .footer-soc__link:hover .icon,
+.footer-soc__link:focus .icon, */
+.footer-soc__link:hover,
+.footer-soc__link:focus {
   /* fill: var(--main-text-color-white); */
   background-color: var(--main-text-color-blue);
 
@@ -607,8 +625,8 @@ width: 370px;
 }
 
 /* Выделение цветом иконок соцсетей футера. Ховер и фокус задается всегда на ссылку! */
-.container .list .social-icons-item .social-icons-link:hover .icon,
-.container .list .social-icons-item .social-icons-link:focus .icon{
+.team-social-icons__link:hover .team-social-icons__icon,
+.team-social-icons__link:focus .team-social-icons__icon {
   fill: var(--main-text-color-white);
   
 
@@ -623,7 +641,7 @@ width: 370px;
 
 
 /* отступы между списками в футере */
-.down-menue-address-style .list .li-footer-first {
+.footer__list {
   margin-bottom: 9px;
   /* margin-top: 9px; */
   /* padding-bottom: 6px;
@@ -631,7 +649,11 @@ width: 370px;
 
 }
 
-.down-menue-address-style .list .li-footer-second {
+.footer-list__address-item {
+  margin-bottom: 9px;
+}
+
+.footer-list .li-footer-second {
   margin-bottom: 9px;
   /* margin-top: 9px; */
   /* padding-bottom: 6px;
@@ -639,26 +661,26 @@ width: 370px;
 
 }
 
-.list-text-portfolio .portfolio-h3-style {
-  margin: 0;
-}
+/* .portfolio__h3-style { */
+  /* margin: 0; */
+/* } */
 
-.list-text-portfolio .portfolio-p-style {
-  margin-top: 4px;
-  margin-bottom: 0;
-}
+/* .portfolio__p-style { */
+  /* margin-top: 4px; */
+  /* margin-bottom: 0; */
+/* } */
 
 /* картинка на всю ширину блока */
-.list-item-portfolio .link img{
-  width: 100%;
-}
+/* .portfolio__list-item .link img{ */
+  /* width: 100%; */
+/* } */
 
-.footer-text-color .container {
+.footer-bg .container {
   padding: 60px 0;
 }
 
 /* Настройка блока адрес в футере, размера и расположения */
-.footer-text-color .container .footer-address {
+.footer-address {
 /* display: flex;
 flex-direction: column;
 align-items:flex-start; */
@@ -670,7 +692,7 @@ margin-right: 70px;
 }
 
 /* Настройки блока соцсетей в футере, размера и расположения */
-.footer-text-color .container .footer-soc {
+.footer-soc {
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -680,18 +702,21 @@ margin-right: 93px;
 }
 
 
-.overlay-port{
+.portfolio__overlay-port{
   position: relative;
   overflow: hidden;
 }
 
-.list-item-portfolio .link:hover .overlay-port .list-portfolio-p,
-.list-item-portfolio .link:focus .overlay-port .list-portfolio-p {
+/* .portfolio__link:hover .portfolio__overlay-port .list-portfolio-p, */
+/* .portfolio__link:focus .portfolio__overlay-port .list-portfolio-p  */
+.portfolio__link:hover .portfolio__list-p, 
+.portfolio__link:focus .portfolio__list-p 
+{
   transform: translateY(0);
+  overflow: hidden;
   /* width: 370px; */
-/* height: 294px; */
-overflow: hidden;
-/* opacity: 1; */
+  /* height: 294px; */
+  /* opacity: 1; */
 }
 
 
@@ -703,7 +728,7 @@ overflow: hidden;
   
 } */
 
-.list-portfolio-p {
+.portfolio__list-p {
   /* display: inline-block;
   content: ''; */
   position: absolute;
@@ -733,15 +758,15 @@ padding-top: 63px;
   padding-right: 24px;
 }
 
-.list-item-portfolio:hover,
-.list-item-portfolio:focus {
+.portfolio__list-item:hover,
+.portfolio__list-item:focus {
   display: block;
 
   /* box-sizing: border-box; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.list-item-portfolio .link
+.portfolio__link
 {
     /* Функция смены цвета */
     transition-property: box-shadow;
@@ -758,7 +783,7 @@ padding-top: 63px;
 
 /* НАШИ ПРЕИМУЩЕСТВА */
 /* настройка фонового изображения для вставки перед списком */
-.index-list .our-list::before {
+.feature__list-item::before {
   /* block растягивает на полный размер родителя */
   display: block;
   content: "";
@@ -795,12 +820,13 @@ padding-top: 63px;
 
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
-.section-client {
+/* section-client */
+.company {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 /* Параметры иконок соцсетей Футера*/
-.icon-client-ya .link .icon{
+.company-icons__icon{
   fill: var(--icon-color-gray);
       /* Функция смены цвета */
       transition-property: fill; /*border-color, */
@@ -809,25 +835,25 @@ padding-top: 63px;
       /* transition-delay: 0; */
 }
 
-/* Настройка иконок вряд */
-.icons-client {
+/* Настройка иконок вряд (icons-client)*/
+.company-icons {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
 /* Промежуткм между блоками */
-.icon-client-ya-margin {
+.company-icons__margin {
   display: flex;
   margin-right: 30px;
 }
 
 
 /* Выделение цветом иконок соцсетей футера. Ховер и фокус задается всегда на ссылку! */
-.container .list .icon-client-ya .link-client:hover .icon,
-.container .list .icon-client-ya .link-client:focus .icon,
-.container .list .icon-client-ya .link-client:hover,
-.container .list .icon-client-ya .link-client:focus {
+.company-icons__link:hover .company-icons__icon,
+.company-icons__link:focus .company-icons__icon,
+.company-icons__link:hover,
+.company-icons__link:focus {
   fill: var(--main-text-color-blue);
   border-color: var(--main-text-color-blue);
   /* border-radius: 10px; */
@@ -838,7 +864,7 @@ padding-top: 63px;
 }
 
 /* Настройка блоков и ссылки параллельно */
-.icon-client-ya .link-client {
+.company-icons__link {
   /* background-color: var(--main-text-color-white); */
   display: flex;
   justify-content: center;
@@ -856,9 +882,9 @@ padding-top: 63px;
     /* transition-delay: 0; */
 }
 
-.footer-soc .footer-h3-come {
-  margin-bottom: 20px;
-}
+/* .footer-soc .footer-h3-come { */
+  /* margin-bottom: 20px; */
+/* } */
 
 
 
@@ -930,8 +956,8 @@ body {
 
 
 /* Выделение цветом иконок письма и телефона. Ховер и фокус задается всегда на ссылку! */
-.link:hover .header-contacts__icon,
-.link:focus .header-contacts__icon {
+.header-contacts__link:hover .header-contacts__icon-link,
+.header-contacts__link:focus .header-contacts__icon-link {
   fill: var(--main-text-color-blue);
 
 
@@ -948,20 +974,20 @@ body {
 } */
 
 /* Убрать нумерацию списка */
-.list {
+ul {
   list-style: none;
   /* padding-left: 0px;
   margin: 0px; */
 }
 
 /* Убрать нумерацию списка */
-.list .our-icon-link{
-  list-style: none;
+/* .list .our-icon-link{ */
+  /* list-style: none; */
   /* padding-left: 0px;
   margin: 0px; */
-}
+/* } */
 
-.down-menue-address-style .list {
+.footer-list {
   padding-left: 0px;
   margin: 0px;
 }
@@ -969,17 +995,23 @@ body {
 
     /* Стили телефона и имэйла в хедере */
 .header-contacts {
-  fill: var(--main-text-color-gray);
-  margin-left: auto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color-gray);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-text-color-gray);
+
+/* up-phone-email-style */
+fill: var(--main-text-color-gray);
+margin-left: auto;
+
+/* nav-contacts */
+display: inline-flex;
+padding: 30px 0;
 }
 
 /* оформление верхнего меню */
-.site-nav {
+.header-style {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -988,12 +1020,13 @@ color: var(--main-text-color-black);
 }
 
 /* Цвет футера */
-.footer-text-color {
+.footer-bg {
   color: var(--main-text-color-white);
+  background: var(--bg-color-gray);
 }
 
 /* оформление адреса нижнего меню */
-.down-menue-address-style {
+.footer__connection {
 /*font-weight: 400;*/
 font-style: normal;
 font-size: 14px;
@@ -1003,26 +1036,44 @@ letter-spacing: 0.03em;
   }
 
 /* оформление нижнего меню телефона и имэйла*/
-.down-menue-contact-style {
+.footer-list__contacts {
 color: rgba(255, 255, 255, 0.6);
     }
 
+/* Стиль заголовка н1 */
+.hero-h1 {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+/* text-align: center; */
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--main-text-color-white);
 
 
-/* Стиль заголовка н2 */
-.h2-style {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-master-black);
+/* Настройка расположения и размеров заголовка */
+  /* position: absolute; */
+width: 696px;
+/* height: 120px; */
+margin: 0 auto;
+text-align: center;
+margin-bottom: 30px;
 }
 
+/* Стиль заголовка н2 */
+/* .h2-style { */
+  /* font-family: Roboto; */
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  /* font-size: 36px; */
+  /* line-height: 1.16; */
+  /* text-align: center; */
+  /* letter-spacing: 0.03em; */
+  /* color: var(--main-text-color-master-black); */
+/* } */
+
 /* Стиль заголовка н2 для "Наша команда" */
-.h2-style-team {
+.team-list__h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -1032,16 +1083,16 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* Стиль заготовка н3 */
-.h3-style {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-color-black);
-}
+/* .h3-style { */
+  /* font-weight: 700; */
+  /* font-size: 14px; */
+  /* line-height: 1.14; */
+  /* letter-spacing: 0.03em; */
+  /* text-transform: uppercase; */
+  /* color: var(--main-text-color-black); */
+/* } */
 
-.p-style-up {
+.feature__p {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -1051,7 +1102,7 @@ color: rgba(255, 255, 255, 0.6);
 
 
 /* Стиль для простого текста главной страницы */
-.p-style {
+.team-list__p {
   /*font-weight: 400;*/
   font-size: 14px;
   line-height: 1.71;
@@ -1070,7 +1121,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* Стиль для cтилизации заголовка фото в портфолио */
-.portfolio-h3-style {
+.portfolio__h3-style {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -1078,19 +1129,23 @@ letter-spacing: 0.06em;
 /* letter-spacing: 0.04em; */
 color: var(--main-text-color-black);
 
+margin: 0;
 }
 
 /* Стиль для cтилизации описания фото в портфолио */
-.portfolio-p-style {
+.portfolio__p-style {
 /*font-weight: 400;*/
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--main-text-color-gray);
+
+margin-top: 4px;
+margin-bottom: 0;
 }
 
 /* Стиль кнопки на главной странице */
-.button {
+.hero__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1105,10 +1160,18 @@ color: var(--main-text-color-gray);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* transition-delay: 0; */
+
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  /* border-color: var(--main-text-color-blue); */
+  margin: 0 auto;
 }
 
 /* Client стилизация текста*/
-.h2-style-client {
+/* h2-style-client */
+.clients {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -1121,7 +1184,7 @@ margin-top: 0;
 
 
 /* футер, ПРИСОЕДИНЯЙТЕСЬ */
-.footer-h3-come {
+.footer-soc__h3 {
   font-weight: 900;
   font-size: 14px;
   line-height: 1.14;
@@ -1129,6 +1192,9 @@ margin-top: 0;
   text-transform: uppercase;
   margin: 0;
   color: var(--main-text-color-white);
+
+  /* отступ вниз */
+  margin-bottom: 20px;
   }
 
 
@@ -1163,27 +1229,55 @@ margin-top: 0;
   /* color: var(--main-text-color-master-black); */
   }
 
+.hero__button-index {
+  background-color: var(--main-text-color-blue);
+  border: none;
+  border-radius: 4px;
+}
+
 /* изменение цвета кнопки при наведении */
-.button:hover,
-.button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--main-text-color-blue); /*изменение цвета кнопни*/
   color: var(--main-text-color-white); /*изменение цвета надписи*/
   cursor: pointer;
 }
 
 /* Стиль кнопок на странице портфолио */
-.portfolio-buttom {
+.port-menu__buttom {
 font-weight: 500;
+color: var(--main-text-color-black);
+background-color: var(--main-text-color-white);
 font-size: 16px;
 line-height: 1.63;
 letter-spacing: 0.03em;
-color: var(--main-text-color-black);
-background-color: var(--main-text-color-white);
+border: none;
+border-radius: 4px;
 cursor: pointer;
+
+  /* Функция смены цвета */
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition-property: background-color, color, box-shadow; */
+  /* transition-duration: 250ms; */
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition-delay: 0; */
 }
 
-.portfolio-buttom.link:hover,
-.portfolio-buttom.link:focus {
+/* .port-menu__buttom.link { */
+  /* Функция смены цвета */
+  /* transition-property: background-color, color, box-shadow; */
+  /* transition-duration: 250ms; */
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition-delay: 0; */
+/* } */
+
+
+.port-menu__buttom.link:hover,
+.port-menu__buttom.link:focus {
   background-color: var(--main-text-color-blue); /*изменение цвета кнопни*/
   color: var(--main-text-color-white);  /*изменение цвета надписи*/
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1193,26 +1287,29 @@ cursor: pointer;
   /* cursor: pointer; */
 }
 
-.portfolio-buttom.link {
-  /* Функция смены цвета */
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-delay: 0; */}
 
-.portfolio-buttom.primary {
+.port-menu__buttom.primary {
   background-color: var(--main-text-color-blue);
   color: var(--main-text-color-white);
   border-color: var(--main-text-color-blue);
 }
 
-.portfolio-buttom.secondary {
+.port-menu__buttom.secondary {
   background-color: var(--bg-color-team);
   color: var(--main-text-color-black);
   border-color: var(--main-text-color-white);
 }
 
-.hero__section {
+/* .bg-color-header { */
+  /* position: absolute; */
+  /* width: 1600px; */
+  /* height: 80px; */
+  /* left: 0px; */
+  /* top: 0px; */
+  /* background: var(--main-text-color-white);
+} */
+
+.hero {
 
 background-color: var(--bg-color-gray);
 text-align: center;
@@ -1228,7 +1325,7 @@ background-position: center;
 background-repeat: no-repeat;
 object-fit: cover;  /*задаем отображение картинки-фона (стоять на месте и т.д.);/
 /* центр всегда на месте */
-/* background-position: center; */
+background-position: center;
 /* можно задать ысоту банера, убирая паддинги, но тогда могут возникнуть баги с переполнением */
 
   /* display: flex;*/  /*работает вместе с align-items*/
@@ -1246,7 +1343,7 @@ object-fit: cover;  /*задаем отображение картинки-фо�
 /* padding: 200px 0;  */
 }
 
-.bg-color-team {
+.team {
   /* position: absolute; */
   /* width: 1600px; */
   /* height: 648px; */
@@ -1255,14 +1352,14 @@ object-fit: cover;  /*задаем отображение картинки-фо�
   background: var(--bg-color-team);
 }
 
-.bg-color-footer {
+/* .bg-color-footer { */
   /* position: absolute; */
   /* width: 1600px; */
   /* height: 252px; */
   /* left: 0px;
   top: 1628px; */
-  background: var(--bg-color-gray);
-}
+  /* background: var(--bg-color-gray); */
+/* } */
 
 .bg-color-portfolio-block {
   /* position: absolute;
@@ -1275,7 +1372,7 @@ border: 1px solid var(--border-color);
 box-sizing: border-box;
 }
 
-.block-style-index {
+.team-list__index {
   /* position: absolute; */
   width: 270px;
   /* height: 368px; */
@@ -1301,8 +1398,12 @@ box-sizing: border-box;
 .current {
   color: var(--main-text-color-blue);
   position: relative; 
+  padding-bottom: 30px;
 }
-
+.header-link {
+  position: relative;
+  
+}
 
 /* Нижняя линия на активном элементе меню */
 .current::after {
@@ -1314,6 +1415,7 @@ box-sizing: border-box;
   width: 100%;
   height: 4px;
   background-color: var(--main-text-color-blue);
+
   border-radius: 2px;
 }
 
@@ -1349,7 +1451,7 @@ box-sizing: border-box;
   align-items: baseline;
 }
 
-.secondary h2 {
+.footer-subscribe__title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -1364,7 +1466,7 @@ box-sizing: border-box;
   display: inline-flex;
 } */
 
-.form-footer {
+.footer-subscribe__form {
   display: inline-flex;
   width: 570px;
 
@@ -1372,7 +1474,7 @@ box-sizing: border-box;
   margin-right: auto;
 }
 
-.input-footer {
+.footer-subscribe__input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1397,7 +1499,7 @@ box-sizing: border-box;
   border-radius: 4px;
 }
 
-.button-footer {
+.footer-subscribe__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -1420,7 +1522,7 @@ box-sizing: border-box;
   margin: 0 auto;
 } */
 
-.button-title {
+.footer-subscribe__button-title {
   margin-right: 12px;
   margin-left: auto;
   font-weight: 700;
@@ -1431,7 +1533,7 @@ box-sizing: border-box;
   color: var(--main-text-color-white);
 }
 
-.icon-send {
+.footer-subscribe__icon-send {
   margin-right: auto;
   width: 24px;
   height: 24px;
@@ -1486,7 +1588,7 @@ box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
 
   width: 528px;
   /* height: 581px; */
@@ -1496,7 +1598,7 @@ box-sizing: border-box;
 }
 
 /* Размер и позиция кнопки Х */
-.modal__bottom-close {
+.modal-button__close {
   background-color: var(--main-text-color-white);
   display: flex;
   margin-left: auto;
@@ -1513,10 +1615,17 @@ box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.modal__bottom-close:hover,
-.modal__bottom-close:focus,
-.modal__bottom-close:hover .icon,
-.modal__bottom-close:focus .icon{
+/* Параметры самого Х */
+.modal-button__icon{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-button__close:hover,
+.modal-button__close:focus,
+.modal-button__close:hover .modal-button__icon,
+.modal-button__close:focus .modal-button__icon{
   cursor: pointer;
 }
 
@@ -1525,13 +1634,11 @@ box-sizing: border-box;
 /* Модальная форма */
 
 .modal-form {
-  /* width: 100%; */
   width: 528px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
   padding-top: 2px;
-  text-align: start;
 }
 
 .modal-form__title {
@@ -1553,8 +1660,7 @@ box-sizing: border-box;
 
 .modal-form__label {
   margin-bottom: 4px;
-  /* position: relative; */
-  align-items: flex-start;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1576,7 +1682,7 @@ box-sizing: border-box;
   outline: none;
 }
 
-.modal-form__input {
+.modal-form__field input {
   cursor: pointer;
   margin: 0;
   padding: 11px 0 11px 42px;
@@ -1585,11 +1691,11 @@ box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-  position: relative;
+
   transition: border-color 250ms var(--timing-function);
 }
 
-.style-field {
+.modal-form__field-style {
   position: relative;
 }
 
@@ -1610,7 +1716,7 @@ box-sizing: border-box;
   transition: fill 250ms var(--timing-function);
 }
 
-.modal-form__comment {
+.modal-form__form {
   padding: 12px 16px;
 
   font-size: 12px;
@@ -1631,7 +1737,7 @@ box-sizing: border-box;
   padding-left: 12px;
 }
 
-.modal-form__option label {
+.modal-form__label {
   font-size: 14px;
   line-height: 24px;
 
@@ -1657,12 +1763,12 @@ box-sizing: border-box;
   overflow: hidden;
 }
 
-.modal-form__option-label {
+.label {
   display: flex;
   align-items: center;
 }
 
-.modal-form__icon-checkbox {
+.modal-form__checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -1673,7 +1779,7 @@ box-sizing: border-box;
 }
 
 /*  */
-.modal-form__checkbox:checked + .modal-form__icon-checkbox {
+.modal-form__checkbox:checked + .modal-form__checkbox-icon {
   border-color: var(--main-text-color-blue);
   background-color: var(--main-text-color-blue);
   background-image: url(../images/icons/v.svg);
@@ -1681,17 +1787,17 @@ box-sizing: border-box;
   background-origin: border-box;
 }
 
-.form-link {
+.modal-form__link {
   text-decoration: underline;
   color: var(--main-text-color-blue);
 }
 
-.modal-form__button-send:hover,
-.modal-form__button-send:focus {
+.form .modal-form__send-button:hover,
+.form .modal-form__send-button:focus {
   background-color: #188ce8;
 }
 
-.modal-form__button-send {
+.modal-form__send-button {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -1708,7 +1814,7 @@ box-sizing: border-box;
   transition: background-color 250ms var(--timing-function);
 }
 
-.modal-form__title-send {
+.title-send {
   display: flex;
   align-items: center;
   text-align: center;
