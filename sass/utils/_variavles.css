@@ -1,0 +1,15 @@
+/* Заготовки глобальных настроек */
+:root {
+    --main-text-color-gray: #757575;
+    --main-text-color-black: #212121;
+    --main-text-color-master-black: #000000;
+    --main-text-color-blue: #2196F3;
+    --main-text-color-white: #FFFFFF;
+    --bg-color-gray: #2f303a;
+    --bg-header-line: #ECECEC;
+    --border-color: #EEEEEE;
+    --bg-color-team: #F5F4FA;
+    --grid-item: 1;
+    --icon-color-gray: #AFB1B8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
