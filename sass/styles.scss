@@ -13,11 +13,43 @@
   overflow: hidden;
 }
 
-@import "./utils/_variavles.css";
+/* Заготовки глобальных настроек */
+:root {
+  --main-text-color-gray: #757575;
+  --main-text-color-black: #212121;
+  --main-text-color-master-black: #000000;
+  --main-text-color-blue: #2196F3;
+  --main-text-color-white: #FFFFFF;
+  --bg-color-gray: #2f303a;
+  --bg-header-line: #ECECEC;
+  --border-color: #EEEEEE;
+  --bg-color-team: #F5F4FA;
+  --grid-item: 1;
+  --icon-color-gray: #AFB1B8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-@import "./base/_container.css";
+/* Общий размер для всей страницы */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0px 15px;
+}
 
-@import "./base/_fonts.css";
+/* Шрифт Raleway */
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic/raleway-v19-latin_cyrillic-ext_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic/raleway-v19-latin_cyrillic-ext_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic/raleway-v19-latin_cyrillic-ext_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic/raleway-v19-latin_cyrillic-ext_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic/raleway-v19-latin_cyrillic-ext_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic/raleway-v19-latin_cyrillic-ext_cyrillic-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
 
 /* font-family: 'Roboto', sans-serif; */
 
