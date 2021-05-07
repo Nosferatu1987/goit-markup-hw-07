@@ -1,0 +1,90 @@
+/* Модальное окно */
+
+/* Параметры фона модального окна */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+}
+
+/* Параметры модального окна до нажатия кнопки (скрытие окна) */
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* параметры формы окна */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  /* height: 581px; */
+  background-color: var(--main-text-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Размер и позиция кнопки Х */
+.modal-button__close {
+  background-color: var(--main-text-color-white);
+  display: flex;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.title-send {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color-white);
+}
+
+/* Параметры самого Х */
+.modal-button__icon{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-button__close:hover,
+.modal-button__close:focus,
+.modal-button__close:hover .modal-button__icon,
+.modal-button__close:focus .modal-button__icon{
+  cursor: pointer;
+}

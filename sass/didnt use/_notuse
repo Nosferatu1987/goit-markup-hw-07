@@ -1,0 +1,47 @@
+MODAL Window
+
+/* НЕ ИСПОЛЬЗУЕМОЕ */
+/* raleway-regular - latin_cyrillic-ext_cyrillic */
+/*@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+ /* src: local(''),
+       url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  /*     url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+ /*      url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+ /*      url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+ /*      url('../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+/*}*/
+/* raleway-700 - latin_cyrillic-ext_cyrillic */
+
+/* Выстраивание списка в ряд */
+/* .line {
+        display: inline;
+        margin-right: 5px; */
+        /* list-style: none;убираем маркеры списка */
+        /*display: inline-block; /* Отображать как строчный элемент */
+        /* margin: 0; убираем верхнее и нижнее поле, равное 1em */
+        /* padding-left: 0; убираем левый отступ, равный 40px */
+        /* margin-right: 5px; Отступ слева */
+        /* border: 1px solid #000; Рамка вокруг текста
+        padding: 3px; Поля вокруг текста */
+    /* } */
+
+
+/*Повтор Параметры иконок соцсетей */
+/* .team-social-icons__icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color-gray);
+  /* fill: #000000; */
+  /* background-color: #000000; */
+}*/ß
+
+
+
+
+
+
+

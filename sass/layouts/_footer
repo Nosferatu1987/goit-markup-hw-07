@@ -1,0 +1,9 @@
+/* Настройки блока соцсетей в футере, размера и расположения */
+.footer-soc {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  /* padding-top: 75px;
+padding-bottom: 97px; */
+margin-right: 93px;
+}

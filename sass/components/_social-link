@@ -1,0 +1,33 @@
+/* Настройка заднего фона для иконок соцсетей в Нашей команде */
+/* .team-social-icons__link */
+.team-social-icons__link {
+  background-color: var(--main-text-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+
+/* .footer-soc__item .footer-soc__link:hover,
+.footer-soc__item .footer-soc__link:focus */
+.team-social-icons__link:hover,
+.team-social-icons__link:focus {
+  fill: var(--main-text-color-white);
+  background-color: var(--main-text-color-blue);
+  
+
+  /* border-radius: 10px; */
+  /* margin: 10px; */
+  /* fill: inherit; */
+}
+
+/* Расстояние между иконками team */
+.team-social-icons__margin {
+  margin-right: 10px;
+  margin-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}

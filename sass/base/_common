@@ -1,0 +1,48 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Сброс стилей */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul
+ {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  /* padding-left: 0px;
+  margin: 0px; */
+}
+
+/* Настройка тела сайта */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em; /* расстояние между буквами*/
+  color: var(--main-text-color-black);
+  /*background-color: #e5e5e5;*/
+}
+
+.header {
+  border-bottom: 1px solid var(--bg-header-line);
+  background: var(--main-text-color-white);
+/* или */
+/* border-width: 1px;
+border-style: solid;
+border-color: var(--main-text-color-gray); */
+}

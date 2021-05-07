@@ -1,0 +1,4 @@
+.portfolio__overlay-port{
+  position: relative;
+  overflow: hidden;
+}

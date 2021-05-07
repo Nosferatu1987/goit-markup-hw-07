@@ -1,0 +1,31 @@
+/* отступ для логотипа */
+.logo {
+  margin-right: auto;
+}
+
+.logo-margin {
+  display:block;
+  margin-bottom: 20px;
+}
+
+.logo-link
+{
+  text-decoration: none; /* убирает подчеркивание с ссылки */
+  color: inherit; /* обесцвечивает ссылку */
+}
+
+/* настройка цвета логотипа, а именно части Web */
+.logocolor {
+  color: var(--main-text-color-blue);
+}
+
+/* Стиль логотипа (цвет, шрифт и т.д.) */
+.logo-style {  
+  font-family: "Raleway", sans-serif;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  /* color: var(--main-text-color-master-black); */
+  }
