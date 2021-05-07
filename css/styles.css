@@ -95,6 +95,30 @@ border-style: solid;
 border-color: var(--main-text-color-gray); */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* изменение ссылки при наведении */
+.link:hover,
+:focus {
+  color: var(--main-text-color-blue);
+}
+
+/* обесцвечивание и скрытия подч]ркивания для ссылки */
+.link {
+  text-decoration: none;
+  /* убирает подчеркивание с ссылки */
+  color: inherit;
+  /*обесцвечивает ссылку*/
+  /* Функция смены цвета */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-delay: 0; */
+}
+
 /* Стиль кнопки на главной странице */
 .hero__button {
   font-weight: 700;
@@ -623,23 +647,357 @@ border-color: var(--main-text-color-gray); */
   margin-bottom: 0;
 }
 
-/* font-family: 'Roboto', sans-serif; */
-/* Цвет фона main */
-.main-bg {
-  background-color: var(--main-text-color-white);
+/* Настройка заднего фона для иконок соцсетей в футере */
+.footer-soc__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* Функция смены цвета */
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-delay: 0; */
+}
+
+/* промежуток между заголовком и подписью */
+.feature__h3 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color-black);
+}
+
+.section-soft_h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  /* настройка текста */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master-black);
+}
+
+.team-list__h3 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Стиль заголовка н3 для "Наша команда" */
+.team-list__h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master-black);
+}
+
+/* Стиль для cтилизации заголовка фото в портфолио */
+.portfolio__h3-style {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  /* letter-spacing: 0.04em; */
+  color: var(--main-text-color-black);
+  margin: 0;
+}
+
+.team-list__h3 {
+  text-align: center;
+}
+
+/* Client стилизация текста*/
+/* h2-style-client */
+.clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-black);
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.soft__p {
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--main-text-color-white);
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+}
+
+.team-list__p {
+  text-align: center;
+}
+
+.team-list__p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0px;
+}
+
+/* .portfolio__link:hover .portfolio__overlay-port .list-portfolio-p, */
+/* .portfolio__link:focus .portfolio__overlay-port .list-portfolio-p  */
+.portfolio__link:hover .portfolio__list-p,
+.portfolio__link:focus .portfolio__list-p {
+  transform: translateY(0);
+  overflow: hidden;
+  /* width: 370px; */
+  /* height: 294px; */
+  /* opacity: 1; */
+}
+
+.portfolio__list-p {
+  /* display: inline-block;
+  content: ''; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms var(--timing-function);
+  /* width: 370px; */
+  /* height: 294px; */
+  /* left: 215px; */
+  /* top: 262px; */
+  /* opacity: 0; */
+  background: rgba(33, 150, 243, 0.9);
+  /* background-size: auto; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-white);
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.feature__p {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-gray);
+  margin: 0;
+}
+
+/* Стиль для простого текста главной страницы */
+.team-list__p {
+  /*font-weight: 400;*/
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-gray);
+}
+
+/* Стиль для подписи нашей команды */
+.p-style-team {
+  /*font-weight: 400;*/
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-gray);
+}
+
+/* Стиль для cтилизации описания фото в портфолио */
+.portfolio__p-style {
+  /*font-weight: 400;*/
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-gray);
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* Страница Портфолио */
+/* main .main-bg-portfolio  .section .container */
+.port-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 0;
+  padding-left: 0;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+/* размер кнопок port-menu */
+.port-menu .link {
+  padding: 6px 22px;
+}
+
+/* display: block for img port-menu */
+.portfolio__img {
+  display: block;
+  max-width: 100%;
+}
+
+/* .main-bg-portfolio  .section*/
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
+  --grid-item: 3;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.portfolio__list-text {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
+.portfolio__list-item {
+  margin: 0 30px 30px 0px;
+  /* width: 370px; */
+  /* padding: 370px 404px; */
+  /* задаём ширину элементов */
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+}
+
+.portfolio__overlay-port {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__list-item:hover,
+.portfolio__list-item:focus {
+  display: block;
+  /* box-sizing: border-box; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__link {
+  /* Функция смены цвета */
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.bg-color-portfolio-block {
+  /* position: absolute;
+width: 370px;
+/* height: 404px; */
+  /* left: 1015px;
+top: 262px; */
+  background: var(--main-text-color-white);
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
 }
 
 .main-bg-portfolio {
   background-color: var(--main-text-color-white);
 }
 
-/* a.current {
+.hero {
+  background-color: var(--bg-color-gray);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  /*максимальная длинна банера*/
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/index/bg-Img-overlay.png), url(../images/index/bg-header-Img.png);
+  /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/bg-header-Img.png); */
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  /*задаем отображение картинки-фона (стоять на месте и т.д.);/
+/* центр всегда на месте */
+  background-position: center;
+  /* можно задать ысоту банера, убирая паддинги, но тогда могут возникнуть баги с переполнением */
+  /* display: flex;*/
+  /*работает вместе с align-items*/
+  /*align-items: center;*/
+  /*вертикальное выравнивание*/
+  /* justify-content: center;  горизонтальное выравнивание */
+  /* Банер всегда подстраивается под экран */
+  /* height: 100vh;  */
+  /* position: absolute; */
+  /* width: 1600px; */
+  /* height: 600px; */
+  /* left: 0px; */
+  /* top: 80px; */
+  /* padding: 250px 0; */
+  /* object-position: 50% 50%; */
+  /* padding: 200px 0;  */
+}
+
+/* Стиль заголовка н1 */
+.hero-h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-text-color-white);
+  /* Настройка расположения и размеров заголовка */
+  /* position: absolute; */
+  width: 696px;
+  /* height: 120px; */
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* цвет текста для отображения активной сылкиы */
+.link.current {
   color: var(--main-text-color-blue);
-} */
-/* ВЫРАВНИВАНИЕ */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* Нижняя линия на активном элементе меню */
+.link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--main-text-color-blue);
+  color: var(--main-text-color-blue);
+  border-radius: 2px;
 }
 
 /* Header position */
@@ -698,14 +1056,51 @@ border-color: var(--main-text-color-gray); */
   /* transition-delay: 0; */
 }
 
-/* .container .header-contacts {
+.header-contacts__icon-link {
+  /* Функция смены цвета */
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-delay: 0; */
+}
+
+/* Выделение цветом иконок письма и телефона. Ховер и фокус задается всегда на ссылку! */
+.header-contacts__link:hover .header-contacts__icon-link,
+.header-contacts__link:focus .header-contacts__icon-link {
+  fill: var(--main-text-color-blue);
+  /* border-radius: 10px; */
+  /* margin: 10px; */
+  /* fill: inherit; */
+}
+
+/* Стили телефона и имэйла в хедере */
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color-gray);
+  /* up-phone-email-style */
   fill: var(--main-text-color-gray);
   margin-left: auto;
-} */
-/* .main-bg .hero .container{
-  padding-top: 200px;
-  padding-bottom: 200px;
-} */
+  /* nav-contacts */
+  display: inline-flex;
+  padding: 30px 0;
+}
+
+/* оформление верхнего меню */
+.header-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color-black);
+}
+
+.header-link {
+  padding: 30px 0;
+}
+
 /* Положение Наших особенностей */
 .feature {
   display: flex;
@@ -729,376 +1124,6 @@ border-color: var(--main-text-color-gray); */
   /* padding-left: 0; */
 }
 
-/* промежуток между заголовком и подписью */
-.feature__h3 {
-  margin-bottom: 10px;
-  margin-top: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-color-black);
-}
-
-.section-soft_h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 0;
-  /* настройка текста */
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-master-black);
-}
-
-.section-soft {
-  padding-top: 0;
-}
-
-/* Положение Наших особенностей */
-.soft {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  /* border-bottom: 30;
-  border-color: var(--main-text-color-gray); */
-}
-
-/* Расстояние между блоками */
-.soft__li {
-  margin-right: 30px;
-}
-
-/*.soft .soft__relative .list-what-img{
-  position: relative;
-  width: 370px;
-  height: 294px;
-  left: 0px;
-  top: 0px;
-} */
-.soft__relative {
-  position: relative;
-  /* width: 370px;
-  height: 294px; */
-  left: 0px;
-  top: 0px;
-}
-
-.soft__p {
-  position: absolute;
-  bottom: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  color: var(--main-text-color-white);
-  background: rgba(47, 48, 58, 0.8);
-  width: 370px;
-}
-
-/* превращаем картинку в блок */
-.soft li img {
-  display: block;
-}
-
-/* Наша команда тени */
-/* .team-list .our-shadow { */
-/* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
-/* border-radius: 0px 0px 4px 4px; */
-/* } */
-/* Положение Наших особенностей */
-.team-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  /* border-bottom: 30;
-  border-color: var(--main-text-color-gray); */
-}
-
-.team-list__margin {
-  margin-right: 30px;
-}
-
-.team-list__h3,
-.team-list__p {
-  text-align: center;
-}
-
-.team-list__h3 {
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.team-list__p {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0px;
-}
-
-.team-list__index div {
-  padding: 30px;
-}
-
-.team-list__index img {
-  display: block;
-  margin-bottom: 0px;
-}
-
-/* FOOTER */
-.bg-color-footer .container {
-  display: flex;
-  align-items: baseline;
-  /* padding: 60px 0px; */
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  /* border-bottom: 30;
-  border-color: var(--main-text-color-gray); */
-}
-
-/* Страница Портфолио */
-/* main .main-bg-portfolio  .section .container */
-.port-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  margin-left: 0;
-  padding-left: 0;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  /* border-bottom: 30;
-  border-color: var(--main-text-color-gray); */
-}
-
-/* размер кнопок port-menu */
-.port-menu .link {
-  padding: 6px 22px;
-}
-
-/* display: block for img port-menu */
-.portfolio__img {
-  display: block;
-  max-width: 100%;
-}
-
-/* .main-bg-portfolio  .section*/
-.portfolio__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
-  --grid-item: 3;
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.portfolio__list-text {
-  padding: 20px 24px;
-  border: 1px solid var(--border-color);
-  border-top: none;
-}
-
-.portfolio__list-item {
-  margin: 0 30px 30px 0px;
-  /* width: 370px; */
-  /* padding: 370px 404px; */
-  /* задаём ширину элементов */
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-}
-
-/* Увеличение области кликабельности ссылки */
-/* .header-style .logo-link, */
-/* .header-menue .link, */
-/* .header-contacts li .link { */
-/* padding: 30px 0; */
-/* } */
-/* Отступ для Нашей команды */
-.team__margin {
-  margin-top: 0;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  /* стиль текста */
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-master-black);
-}
-
-.team-list__p {
-  margin-bottom: 16px;
-}
-
-/* Выделение цветом иконок соцсетей нашей команды. Ховер и фокус задается всегда на ссылку! */
-/* .footer-soc__item .footer-soc__link:hover .icon,
-.footer-soc__item .footer-soc__link:focus .icon, */
-/* Настройка заднего фона для иконок соцсетей в футере */
-.footer-soc__link {
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  /* Функция смены цвета */
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-delay: 0; */
-}
-
-.header-contacts__icon-link {
-  /* Функция смены цвета */
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-delay: 0; */
-}
-
-/* Расстояние между иконками footer */
-.footer-soc__item-margin {
-  margin-right: 10px;
-  margin-top: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* отступы между списками в футере */
-.footer__list {
-  margin-bottom: 9px;
-  /* margin-top: 9px; */
-  /* padding-bottom: 6px;
-  padding-top: 9px; */
-}
-
-.footer-list__address-item {
-  margin-bottom: 9px;
-}
-
-.footer-list .li-footer-second {
-  margin-bottom: 9px;
-  /* margin-top: 9px; */
-  /* padding-bottom: 6px;
-  padding-top: 9px; */
-}
-
-/* .portfolio__h3-style { */
-/* margin: 0; */
-/* } */
-/* .portfolio__p-style { */
-/* margin-top: 4px; */
-/* margin-bottom: 0; */
-/* } */
-/* картинка на всю ширину блока */
-/* .portfolio__list-item .link img{ */
-/* width: 100%; */
-/* } */
-.footer-bg .container {
-  padding: 60px 0;
-}
-
-/* Настройка блока адрес в футере, размера и расположения */
-.footer-address {
-  /* display: flex;
-flex-direction: column;
-align-items:flex-start; */
-  /* padding-left: 30px; */
-  /* padding-top: 60px;
-padding-bottom: 60px; */
-  margin-right: 70px;
-  /* padding-left: 0; */
-}
-
-.portfolio__overlay-port {
-  position: relative;
-  overflow: hidden;
-}
-
-/* .portfolio__link:hover .portfolio__overlay-port .list-portfolio-p, */
-/* .portfolio__link:focus .portfolio__overlay-port .list-portfolio-p  */
-.portfolio__link:hover .portfolio__list-p,
-.portfolio__link:focus .portfolio__list-p {
-  transform: translateY(0);
-  overflow: hidden;
-  /* width: 370px; */
-  /* height: 294px; */
-  /* opacity: 1; */
-}
-
-/* .list-portfolio-p{ */
-/* opacity: 50%; */
-/* } */
-/* .bg-port-flip {
-  
-} */
-.portfolio__list-p {
-  /* display: inline-block;
-  content: ''; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translatey(100%);
-  transition: transform 250ms var(--timing-function);
-  /* width: 370px; */
-  /* height: 294px; */
-  /* left: 215px; */
-  /* top: 262px; */
-  /* opacity: 0; */
-  background: rgba(33, 150, 243, 0.9);
-  /* background-size: auto; */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  /* or 156% */
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-white);
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.portfolio__list-item:hover,
-.portfolio__list-item:focus {
-  display: block;
-  /* box-sizing: border-box; */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio__link {
-  /* Функция смены цвета */
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-
-/* .footer-come {
-  text-align: left;
-} */
 /* НАШИ ПРЕИМУЩЕСТВА */
 /* настройка фонового изображения для вставки перед списком */
 .feature__list-item::before {
@@ -1134,22 +1159,111 @@ padding-bottom: 60px; */
   background-image: url("../images/icons/astronaut-1.svg");
 }
 
+.section-soft {
+  padding-top: 0;
+}
+
+/* Положение Наших особенностей */
+.soft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+/* Расстояние между блоками */
+.soft__li {
+  margin-right: 30px;
+}
+
+.soft__relative {
+  position: relative;
+  /* width: 370px;
+  height: 294px; */
+  left: 0px;
+  top: 0px;
+}
+
+/* превращаем картинку в блок soft li img*/
+.soft__img {
+  display: block;
+}
+
+/* Положение Наших особенностей */
+.team-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+.team-list__margin {
+  margin-right: 30px;
+}
+
+.team-list__index div {
+  padding: 30px;
+}
+
+.team-list__index img {
+  display: block;
+  margin-bottom: 0px;
+}
+
+/* Отступ для Нашей команды */
+.team__margin {
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* стиль текста */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master-black);
+}
+
+.team-list__p {
+  margin-bottom: 16px;
+}
+
+.team {
+  /* position: absolute; */
+  /* width: 1600px; */
+  /* height: 648px; */
+  /* left: 0px;
+  top: 1449px; */
+  background: var(--bg-color-team);
+}
+
+.team-list__index {
+  /* position: absolute; */
+  width: 270px;
+  /* height: 368px; */
+  /* left: 215px;
+  top: 1635px; */
+  background: var(--main-text-color-white);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 /* section-client */
 .company {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-/* Параметры иконок соцсетей Футера*/
-.company-icons__icon {
-  fill: var(--icon-color-gray);
-  /* Функция смены цвета */
-  transition-property: fill;
-  /*border-color, */
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-delay: 0; */
 }
 
 /* Настройка иконок вряд (icons-client)*/
@@ -1197,76 +1311,99 @@ padding-bottom: 60px; */
   /* transition-delay: 0; */
 }
 
-/* .footer-soc .footer-h3-come { */
-/* margin-bottom: 20px; */
-/* } */
-/* Применение классов */
-/* обесцвечивание и скрытия подч]ркивания для ссылки */
-.link {
-  text-decoration: none;
-  /* убирает подчеркивание с ссылки */
-  color: inherit;
-  /*обесцвечивает ссылку*/
+/* Параметры иконок соцсетей Футера*/
+.company-icons__icon {
+  fill: var(--icon-color-gray);
   /* Функция смены цвета */
-  transition-property: color;
+  transition-property: fill;
+  /*border-color, */
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* transition-delay: 0; */
 }
 
-/* изменение ссылки при наведении */
-.link:hover,
-:focus {
-  color: var(--main-text-color-blue);
+/* Настройки блока соцсетей в футере, размера и расположения */
+.footer-soc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-top: 75px;
+padding-bottom: 97px; */
+  margin-right: 93px;
 }
 
-/* Выделение цветом иконок письма и телефона. Ховер и фокус задается всегда на ссылку! */
-.header-contacts__link:hover .header-contacts__icon-link,
-.header-contacts__link:focus .header-contacts__icon-link {
-  fill: var(--main-text-color-blue);
-  /* border-radius: 10px; */
-  /* margin: 10px; */
-  /* fill: inherit; */
+/* Расстояние между иконками footer */
+.footer-soc__item-margin {
+  margin-right: 10px;
+  margin-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* Отцентровать */
-/* .center {
-  text-align: center;
-} */
-/* Убрать нумерацию списка */
-/* Убрать нумерацию списка */
-/* .list .our-icon-link{ */
-/* list-style: none; */
-/* padding-left: 0px;
-  margin: 0px; */
-/* } */
+/* отступы между списками в футере */
+.footer__list {
+  margin-bottom: 9px;
+  /* margin-top: 9px; */
+  /* padding-bottom: 6px;
+  padding-top: 9px; */
+}
+
+.footer-list__address-item {
+  margin-bottom: 9px;
+}
+
+/* .footer-list */
+.li-footer-second {
+  margin-bottom: 9px;
+  /* margin-top: 9px; */
+  /* padding-bottom: 6px;
+  padding-top: 9px; */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Настройка блока адрес в футере, размера и расположения */
+.footer-address {
+  /* display: flex;
+flex-direction: column;
+align-items:flex-start; */
+  /* padding-left: 30px; */
+  /* padding-top: 60px;
+padding-bottom: 60px; */
+  margin-right: 70px;
+  /* padding-left: 0; */
+}
+
+.footer-bg .container {
+  padding: 60px 0;
+}
+
+/* футер, ПРИСОЕДИНЯЙТЕСЬ */
+.footer-soc__h3 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--main-text-color-white);
+  /* отступ вниз */
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.bg-color-footer .container {
+  display: flex;
+  align-items: baseline;
+  /* padding: 60px 0px; */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
 .footer-list {
   padding-left: 0px;
   margin: 0px;
-}
-
-/* Стили телефона и имэйла в хедере */
-.header-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color-gray);
-  /* up-phone-email-style */
-  fill: var(--main-text-color-gray);
-  margin-left: auto;
-  /* nav-contacts */
-  display: inline-flex;
-  padding: 30px 0;
-}
-
-/* оформление верхнего меню */
-.header-style {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color-black);
 }
 
 /* Цвет футера */
@@ -1289,240 +1426,6 @@ padding-bottom: 60px; */
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Стиль заголовка н1 */
-.hero-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  /* text-align: center; */
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-text-color-white);
-  /* Настройка расположения и размеров заголовка */
-  /* position: absolute; */
-  width: 696px;
-  /* height: 120px; */
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Стиль заголовка н2 */
-/* .h2-style { */
-/* font-family: Roboto; */
-/* font-style: normal; */
-/* font-weight: 700; */
-/* font-size: 36px; */
-/* line-height: 1.16; */
-/* text-align: center; */
-/* letter-spacing: 0.03em; */
-/* color: var(--main-text-color-master-black); */
-/* } */
-/* Стиль заголовка н2 для "Наша команда" */
-.team-list__h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.9;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-master-black);
-}
-
-/* Стиль заготовка н3 */
-/* .h3-style { */
-/* font-weight: 700; */
-/* font-size: 14px; */
-/* line-height: 1.14; */
-/* letter-spacing: 0.03em; */
-/* text-transform: uppercase; */
-/* color: var(--main-text-color-black); */
-/* } */
-.feature__p {
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-gray);
-  margin: 0;
-}
-
-/* Стиль для простого текста главной страницы */
-.team-list__p {
-  /*font-weight: 400;*/
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-gray);
-}
-
-/* Стиль для подписи нашей команды */
-.p-style-team {
-  /*font-weight: 400;*/
-  font-size: 16px;
-  line-height: 1.19;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-gray);
-}
-
-/* Стиль для cтилизации заголовка фото в портфолио */
-.portfolio__h3-style {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  /* letter-spacing: 0.04em; */
-  color: var(--main-text-color-black);
-  margin: 0;
-}
-
-/* Стиль для cтилизации описания фото в портфолио */
-.portfolio__p-style {
-  /*font-weight: 400;*/
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-gray);
-  margin-top: 4px;
-  margin-bottom: 0;
-}
-
-/* Client стилизация текста*/
-/* h2-style-client */
-.clients {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color-black);
-  margin-bottom: 50px;
-  margin-top: 0;
-}
-
-/* футер, ПРИСОЕДИНЯЙТЕСЬ */
-.footer-soc__h3 {
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin: 0;
-  color: var(--main-text-color-white);
-  /* отступ вниз */
-  margin-bottom: 20px;
-}
-
-/* НАСТРОЙКА ЦВЕТОВ */
-/* ЦВЕТА ФОНА И КНОПОК */
-/* .bg-color-header { */
-/* position: absolute; */
-/* width: 1600px; */
-/* height: 80px; */
-/* left: 0px; */
-/* top: 0px; */
-/* background: var(--main-text-color-white);
-} */
-.hero {
-  background-color: var(--bg-color-gray);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  /*максимальная длинна банера*/
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/index/bg-Img-overlay.png), url(../images/index/bg-header-Img.png);
-  /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/bg-header-Img.png); */
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  /*задаем отображение картинки-фона (стоять на месте и т.д.);/
-/* центр всегда на месте */
-  background-position: center;
-  /* можно задать ысоту банера, убирая паддинги, но тогда могут возникнуть баги с переполнением */
-  /* display: flex;*/
-  /*работает вместе с align-items*/
-  /*align-items: center;*/
-  /*вертикальное выравнивание*/
-  /* justify-content: center;  горизонтальное выравнивание */
-  /* Банер всегда подстраивается под экран */
-  /* height: 100vh;  */
-  /* position: absolute; */
-  /* width: 1600px; */
-  /* height: 600px; */
-  /* left: 0px; */
-  /* top: 80px; */
-  /* padding: 250px 0; */
-  /* object-position: 50% 50%; */
-  /* padding: 200px 0;  */
-}
-
-.team {
-  /* position: absolute; */
-  /* width: 1600px; */
-  /* height: 648px; */
-  /* left: 0px;
-  top: 1449px; */
-  background: var(--bg-color-team);
-}
-
-/* .bg-color-footer { */
-/* position: absolute; */
-/* width: 1600px; */
-/* height: 252px; */
-/* left: 0px;
-  top: 1628px; */
-/* background: var(--bg-color-gray); */
-/* } */
-.bg-color-portfolio-block {
-  /* position: absolute;
-width: 370px;
-/* height: 404px; */
-  /* left: 1015px;
-top: 262px; */
-  background: var(--main-text-color-white);
-  border: 1px solid var(--border-color);
-  box-sizing: border-box;
-}
-
-.team-list__index {
-  /* position: absolute; */
-  width: 270px;
-  /* height: 368px; */
-  /* left: 215px;
-  top: 1635px; */
-  background: var(--main-text-color-white);
-  /* material shadow v1 */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-/* ЦВЕТА ТЕКСТА */
-/* цвет текста для отображения активной сылкиы */
-.current {
-  color: var(--main-text-color-blue);
-  position: relative;
-  padding-bottom: 30px;
-}
-
-.header-link {
-  padding: 30px 0;
-}
-
-/* Нижняя линия на активном элементе меню */
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--main-text-color-blue);
-  border-radius: 2px;
-}
-
 /* FOOTER */
 .secondary {
   display: flex;
@@ -1539,9 +1442,6 @@ top: 262px; */
   color: var(--main-text-color-white);
 }
 
-/* .subscribe {
-  display: inline-flex;
-} */
 .footer-subscribe__form {
   display: inline-flex;
   width: 570px;
@@ -1557,19 +1457,6 @@ top: 262px; */
   background: 0;
   display: flex;
   flex-direction: column;
-}
-
-.form-label input {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: var(--bg-color-gray);
-  padding: 15px 0 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .footer-subscribe__icon-send {

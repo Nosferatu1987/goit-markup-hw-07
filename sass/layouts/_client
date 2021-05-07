@@ -1,0 +1,61 @@
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+/* section-client */
+.company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Настройка иконок вряд (icons-client)*/
+.company-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Промежуткм между блоками */
+.company-icons__margin {
+  display: flex;
+  margin-right: 30px;
+}
+
+/* Выделение цветом иконок соцсетей футера. Ховер и фокус задается всегда на ссылку! */
+.company-icons__link:hover .company-icons__icon,
+.company-icons__link:focus .company-icons__icon,
+.company-icons__link:hover,
+.company-icons__link:focus {
+  fill: var(--main-text-color-blue);
+  border-color: var(--main-text-color-blue);
+  /* border-radius: 10px; */
+  /* margin: 10px; */
+  /* fill: inherit; */
+}
+
+/* Настройка блоков и ссылки параллельно */
+.company-icons__link {
+  /* background-color: var(--main-text-color-white); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px;
+  border-radius: 4%;
+  border-style: solid;
+  border-color: var(--icon-color-gray);
+    /* Функция смены цвета */
+    transition-property: border-color; /*, fill*/
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-delay: 0; */
+}
+
+/* Параметры иконок соцсетей Футера*/
+.company-icons__icon{
+  fill: var(--icon-color-gray);
+      /* Функция смены цвета */
+      transition-property: fill; /*border-color, */
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      /* transition-delay: 0; */
+}
+

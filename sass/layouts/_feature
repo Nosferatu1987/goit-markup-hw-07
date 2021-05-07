@@ -1,0 +1,59 @@
+/* Положение Наших особенностей */
+.feature { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 0;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+/* Размер класа feature__list-item и расстояния между ними */
+.feature__list-item {
+  width: 270px;
+  /* height: 101px; */
+  
+}
+
+.feature__list-margin{
+  margin-right: 30px;
+  /* padding-left: 0; */
+}
+
+/* НАШИ ПРЕИМУЩЕСТВА */
+/* настройка фонового изображения для вставки перед списком */
+.feature__list-item::before {
+  /* block растягивает на полный размер родителя */
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color-team);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border-radius: 4px; */
+}
+
+
+/* Антенна в виде фонового изображения */
+.icon-antenna::before {
+  background-image: url("../images/icons/antenna-1.svg");
+}
+
+/* Часы в виде фонового изображения */
+.icon-clock::before {
+  background-image: url("../images/icons/clock-1.svg");
+}
+
+/* Компьютер-диаграмма в виде фонового изображения */
+.icon-comp::before {
+  background-image: url("../images/icons/diagram-1.svg");
+}
+
+/* Астронавт в виде фонового изображения */
+.icon-astronaut::before {
+  background-image: url("../images/icons/astronaut-1.svg");
+}

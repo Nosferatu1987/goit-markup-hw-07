@@ -1,0 +1,35 @@
+.section-soft{
+  padding-top: 0;
+}
+
+/* Положение Наших особенностей */
+.soft { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+/* Расстояние между блоками */
+.soft__li{
+  margin-right: 30px;
+}
+
+
+.soft__relative{
+  position: relative;
+  /* width: 370px;
+  height: 294px; */
+  left: 0px;
+  top: 0px;
+}
+
+
+
+/* превращаем картинку в блок soft li img*/
+.soft__img {
+  display: block;
+}

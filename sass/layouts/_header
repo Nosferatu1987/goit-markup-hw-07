@@ -1,0 +1,136 @@
+/* цвет текста для отображения активной сылкиы */
+.link.current {
+  color: var(--main-text-color-blue);
+  position: relative; 
+  padding-bottom: 30px;
+}
+
+/* Нижняя линия на активном элементе меню */
+.link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--main-text-color-blue);
+  color: var(--main-text-color-blue);
+
+  border-radius: 2px;
+}
+
+/* Header position */
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 24px; */
+  /* padding-bottom: 25px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+
+
+/* Центровка контактов */
+/* ,
+.header-contacts .list  */
+.header-style{
+display: flex;
+align-items: center;
+
+}
+
+
+/* .nav-contacts */
+.header-menue
+ {
+  display: inline-flex;
+  padding-left: 0;
+}
+
+
+
+/* отступ для студии,портфолио и контактов */
+.header-menue {
+  /* margin-right: 331px; */
+  margin-left: 80px;
+}
+
+/* отступы внутри header-menue */
+.header-menue__li,
+.header-contacts__li {
+  margin-right: 50px;
+}
+
+/* расположение текста относительно картинок */
+.header-contacts__icon-link,
+.header-contacts__link
+ {
+  vertical-align: middle;
+  /* padding: 30px 0; */
+}
+
+/* пвсстояние между картинкой и текстом */
+.header-contacts__icon-link {
+  fill: var(--main-text-color-gray);
+  margin-right: 10px;
+  /* padding: 10px; */
+    /* Функция смены цвета */
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-delay: 0; */
+}
+
+.header-contacts__icon-link {
+    /* Функция смены цвета */
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-delay: 0; */
+}
+
+/* Выделение цветом иконок письма и телефона. Ховер и фокус задается всегда на ссылку! */
+.header-contacts__link:hover .header-contacts__icon-link,
+.header-contacts__link:focus .header-contacts__icon-link {
+  fill: var(--main-text-color-blue);
+
+  /* border-radius: 10px; */
+  /* margin: 10px; */
+  /* fill: inherit; */
+}
+
+    /* Стили телефона и имэйла в хедере */
+.header-contacts {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-text-color-gray);
+
+/* up-phone-email-style */
+fill: var(--main-text-color-gray);
+margin-left: auto;
+
+/* nav-contacts */
+display: inline-flex;
+padding: 30px 0;
+}
+
+/* оформление верхнего меню */
+.header-style {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-text-color-black);
+}
+
+.header-link {
+  // position: relative;
+  padding: 30px 0;
+  
+}
+

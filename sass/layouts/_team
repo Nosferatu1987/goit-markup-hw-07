@@ -1,0 +1,68 @@
+/* Положение Наших особенностей */
+.team-list { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+.team-list__margin {
+  margin-right: 30px;
+}
+
+.team-list__index div {
+  padding: 30px;
+}
+
+.team-list__index img {
+  display: block;
+  margin-bottom: 0px;
+}
+
+/* Отступ для Нашей команды */
+.team__margin{
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+/* стиль текста */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master-black);
+}
+
+.team-list__p {
+  margin-bottom: 16px;
+}
+
+.team {
+  /* position: absolute; */
+  /* width: 1600px; */
+  /* height: 648px; */
+  /* left: 0px;
+  top: 1449px; */
+  background: var(--bg-color-team);
+}
+
+.team-list__index {
+  /* position: absolute; */
+  width: 270px;
+  /* height: 368px; */
+  /* left: 215px;
+  top: 1635px; */
+  background: var(--main-text-color-white);
+  /* material shadow v1 */  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+

@@ -7,3 +7,145 @@
 padding-bottom: 97px; */
 margin-right: 93px;
 }
+
+/* Расстояние между иконками footer */
+.footer-soc__item-margin {
+  margin-right: 10px;
+  margin-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* отступы между списками в футере */
+.footer__list {
+  margin-bottom: 9px;
+  /* margin-top: 9px; */
+  /* padding-bottom: 6px;
+  padding-top: 9px; */
+
+}
+
+.footer-list__address-item {
+  margin-bottom: 9px;
+}
+
+/* .footer-list */
+.li-footer-second {
+  margin-bottom: 9px;
+  /* margin-top: 9px; */
+  /* padding-bottom: 6px;
+  padding-top: 9px; */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Настройка блока адрес в футере, размера и расположения */
+.footer-address {
+/* display: flex;
+flex-direction: column;
+align-items:flex-start; */
+/* padding-left: 30px; */
+/* padding-top: 60px;
+padding-bottom: 60px; */
+margin-right: 70px;
+/* padding-left: 0; */
+}
+
+.footer-bg .container {
+  padding: 60px 0;
+}
+
+/* футер, ПРИСОЕДИНЯЙТЕСЬ */
+.footer-soc__h3 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--main-text-color-white);
+
+  /* отступ вниз */
+  margin-bottom: 20px;
+  }
+
+  /* FOOTER */
+.bg-color-footer .container { 
+  display: flex;
+  align-items: baseline;
+  /* padding: 60px 0px; */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* border-bottom: 30;
+  border-color: var(--main-text-color-gray); */
+}
+
+.footer-list {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+/* Цвет футера */
+.footer-bg {
+  color: var(--main-text-color-white);
+  background: var(--bg-color-gray);
+}
+
+/* оформление адреса нижнего меню */
+.footer__connection {
+/*font-weight: 400;*/
+font-style: normal;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+
+  }
+
+/* оформление нижнего меню телефона и имэйла*/
+.footer-list__contacts {
+color: rgba(255, 255, 255, 0.6);
+}
+
+/* FOOTER */
+.secondary {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-subscribe__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color-white);
+}
+
+
+
+.footer-subscribe__form {
+  display: inline-flex;
+  width: 570px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-subscribe__input {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subscribe__icon-send {
+  margin-right: auto;
+  width: 24px;
+  height: 24px;
+  fill: var(--main-text-color-white);
+}
+

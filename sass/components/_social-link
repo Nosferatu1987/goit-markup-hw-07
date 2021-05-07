@@ -31,3 +31,19 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* Настройка заднего фона для иконок соцсетей в футере */
+.footer-soc__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+    /* Функция смены цвета */
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-delay: 0; */
+}

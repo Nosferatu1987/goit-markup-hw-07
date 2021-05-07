@@ -1,0 +1,108 @@
+.soft__p{
+position: absolute;
+bottom: 0;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+padding-top: 27px;
+padding-bottom: 27px;
+color: var(--main-text-color-white);
+background: rgba(47, 48, 58, 0.8);
+width: 370px;
+} 
+
+.team-list__p {
+  text-align: center;
+}
+
+.team-list__p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0px;
+}
+
+/* .portfolio__link:hover .portfolio__overlay-port .list-portfolio-p, */
+/* .portfolio__link:focus .portfolio__overlay-port .list-portfolio-p  */
+.portfolio__link:hover .portfolio__list-p, 
+.portfolio__link:focus .portfolio__list-p 
+{
+  transform: translateY(0);
+  overflow: hidden;
+  /* width: 370px; */
+  /* height: 294px; */
+  /* opacity: 1; */
+}
+
+.portfolio__list-p {
+  /* display: inline-block;
+  content: ''; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms var(--timing-function);
+/* width: 370px; */
+/* height: 294px; */
+/* left: 215px; */
+/* top: 262px; */
+/* opacity: 0; */
+background: rgba(33, 150, 243, 0.9);
+/* background-size: auto; */
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+/* or 156% */
+letter-spacing: 0.03em;
+color: var(--main-text-color-white);
+padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.feature__p {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-gray);
+  margin: 0;
+}
+
+/* Стиль для простого текста главной страницы */
+.team-list__p {
+  /*font-weight: 400;*/
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;  
+  color: var(--main-text-color-gray);
+}
+
+/* Стиль для подписи нашей команды */
+.p-style-team {
+  /*font-weight: 400;*/
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;  
+  color: var(--main-text-color-gray);
+}
+
+/* Стиль для cтилизации описания фото в портфолио */
+.portfolio__p-style {
+/*font-weight: 400;*/
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--main-text-color-gray);
+
+margin-top: 4px;
+margin-bottom: 0;
+}
+
